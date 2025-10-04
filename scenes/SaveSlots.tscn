@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3]
+
+
+[ext_resource type="Script" path="res://scripts/SaveSlots.gd" id=1]
+
+[node name="SaveSlots" type="Control"]
+script = ExtResource( 1 )
+
+[node name="VBox" type="VBoxContainer" parent="."]
+
+[node name="Info" type="Label" parent="VBox"]
+unique_name_in_owner = true
+text = "Current slot: 1"
+
+[node name="Slot1" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Slot 1"
+
+[node name="Slot2" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Slot 2"
+
+[node name="Slot3" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Slot 3"
+
+[node name="Back" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Back"

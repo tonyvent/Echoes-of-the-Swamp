@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+
+[node name="Platform" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = RectangleShape2D.new()
+[node name="Sprite" type="ColorRect" parent="."]
+color = Color(0.2,0.7,0.3,1)
+size = Vector2(64,8)

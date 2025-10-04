@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3]
+
+
+[node name="MainMenu" type="Control"]
+script = ExtResource( 1 )
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.25
+anchor_right = 0.75
+anchor_top = 0.2
+anchor_bottom = 0.8
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="BestDepth" type="Label" parent="VBox"]
+unique_name_in_owner = true
+text = "Best Depth: 0"
+
+[node name="Start" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Start"
+
+[node name="Tutorial" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Tutorial"
+
+[node name="Settings" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Settings"
+
+[node name="Slots" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Save Slots"
+
+[node name="Exit" type="Button" parent="VBox"]
+unique_name_in_owner = true
+text = "Exit"
+
+[ext_resource type="Script" path="res://scripts/MainMenu.gd" id=1]

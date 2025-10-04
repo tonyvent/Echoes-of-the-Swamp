@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3]
+
+
+[ext_resource type="Script" path="res://scripts/Frog.gd" id=1]
+
+[node name="Frog" type="CharacterBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = RectangleShape2D.new()
+
+[node name="SpriteRoot" type="Node2D" parent="."]
+
+[node name="Sprite" type="ColorRect" parent="SpriteRoot"]
+color = Color(0.1,0.8,0.5,1)
+size = Vector2(18,12)
+position = Vector2(-9,-12)
+
+[node name="TongueRay" type="RayCast2D" parent="."]
+target_position = Vector2(120,0)
+enabled = false
